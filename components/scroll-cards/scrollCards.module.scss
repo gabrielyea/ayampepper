@@ -1,0 +1,43 @@
+.mainContainer {
+  border-radius: 20px; 
+  height: 150px; 
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  transform-origin: center;
+  padding: 4em 0em;
+  gap: 2em;
+
+  div {
+      p {
+        font-size: 2rem;
+        color: #a0c040;
+      }
+  }
+  img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    height: 200px; 
+    width: 100px;
+    width: 100vw;
+    padding: 1em 1em;
+
+    div {
+      width: 400px;
+        p {
+          font-size: 1rem;
+          color: #a0c040;
+        }
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
