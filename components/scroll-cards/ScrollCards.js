@@ -42,7 +42,6 @@ const animCollection = {
   },
   fadeIn: {
     hide: {
-      scale: 0,
       opacity: 0,
       transition: {
         type: 'spring',
@@ -50,7 +49,6 @@ const animCollection = {
       },
     },
     show: {
-      scale: [0, 1],
       opacity: 1,
       transition: {
         type: 'spring',
