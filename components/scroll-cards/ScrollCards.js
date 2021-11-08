@@ -26,7 +26,7 @@ const animCollection = {
   },
   enterLeft: {
     hide: {
-      x: '55vw',
+      x: '200px',
       opacity: 0,
       transition: {
         duration: 0.5,
@@ -34,7 +34,7 @@ const animCollection = {
     },
     show: {
       opacity: 1,
-      x: '50vw',
+      x: '0',
       transition: {
         duration: 1,
       },

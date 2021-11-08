@@ -1,17 +1,19 @@
 .mainContainer {
   border-radius: 20px; 
-  height: 150px; 
+  height: 100%; 
   width: 800px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   transform-origin: center;
-  padding: 4em 0em;
+  padding: 4em 1em;
   gap: 2em;
+  background-color: rgba(63, 63, 63, 0.438);
 
   div {
       p {
-        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
         color: #a0c040;
       }
   }
