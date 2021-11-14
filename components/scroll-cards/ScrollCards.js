@@ -58,7 +58,7 @@ const animCollection = {
   },
 };
 
-const ScrollCards = ({ animName, children }) => {
+const ScrollCards = ({ animName, children, span }) => {
   const [ref, inView] = useInView({ threshold: 0.50 });
   const controls = useAnimation();
 
@@ -77,6 +77,7 @@ const ScrollCards = ({ animName, children }) => {
         ref={ref}
         variants={animCollection[animName]}
         animate={controls}
+        style={span}
       >
 
         {children}

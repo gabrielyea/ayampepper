@@ -1,5 +1,5 @@
 .mainContainer {
-  padding: 20rem 2rem;
+  padding: 20rem 0.5rem;
   // display: flex;
   // justify-content: center;
   // flex-direction: column;
@@ -23,6 +23,8 @@
 
 @media (max-width: 600px) {
   .mainContainer {
+    display: flex;
+    flex-direction: column;
     h2 {
       font-size: 2rem;
       margin: 0;

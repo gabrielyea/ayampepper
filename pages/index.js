@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import Image from 'next/image';
 import useWindowDimensions from '../components/custom-hooks/useWindowDimenssions';
 import ScrollCards from '../components/scroll-cards/ScrollCards';
 import Wrapper from '../components/wrapper/Wrapper';
@@ -30,6 +31,7 @@ const childA = {
     opacity: 1,
   },
 };
+
 const childB = {
   initial: {
     opacity: 0,
@@ -101,10 +103,13 @@ export default function Home() {
                   {' '}
                 </p>
               </div>
-              <img src="./images/red-chile.png" alt="chile" />
+              <Image src="/images/platter-chile.svg" height={800} width={800} alt="chile" />
             </ScrollCards>
-            <ScrollCards animName={x < 600 ? 'fadeIn' : 'enterLeft'}>
-              <img src="./images/red-chile.png" alt="chile" />
+            <ScrollCards
+              span={{ gridArea: '2 / 2 / span 2' }}
+              animName={x < 600 ? 'fadeIn' : 'enterLeft'}
+            >
+              <Image src="/images/serrano-chile.svg" height={800} width={800} alt="chile" />
               <div>
                 <p>
                   {' '}
@@ -128,9 +133,8 @@ export default function Home() {
                   {' '}
                 </p>
               </div>
-              <img src="./images/red-chile.png" alt="chile" />
+              <Image src="/images/green-red-chile.svg" height={800} width={800} alt="chile" />
             </ScrollCards>
-
           </>
           )}
         </Wrapper>
@@ -152,10 +156,12 @@ export default function Home() {
                   {' '}
                 </p>
               </div>
-              <img src="./images/red-chile.png" alt="chile" />
+              <Image src="/images/mexico.svg" height={800} width={800} alt="chile" />
             </ScrollCards>
-            <ScrollCards animName={x < 600 ? 'fadeIn' : 'enterLeft'}>
-              <img src="./images/red-chile.png" alt="chile" />
+            <ScrollCards
+              animName={x < 600 ? 'fadeIn' : 'enterLeft'}
+            >
+              <Image class="svgImg" src="/images/happy-chile.svg" height={800} width={800} alt="chile" />
               <div>
                 <p>
                   {' '}
@@ -166,10 +172,12 @@ export default function Home() {
                   {' '}
                 </p>
               </div>
-
             </ScrollCards>
             <ScrollCards animName={x < 600 ? 'fadeIn' : 'enterRigth'}>
               <motion.ul
+                style={{
+                  color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+                }}
                 variants={parent}
                 initial="initial"
                 animate="animate"
@@ -188,7 +196,7 @@ export default function Home() {
                   dato curioso
                 </motion.li>
               </motion.ul>
-              <img src="./images/red-chile.png" alt="chile" />
+              <Image src="/images/happy-chile-2.svg" height={800} width={800} alt="chile" />
             </ScrollCards>
           </>
           )}
