@@ -26,7 +26,7 @@ const animCollection = {
   },
   enterLeft: {
     hide: {
-      x: '55vw',
+      x: '200px',
       opacity: 0,
       transition: {
         duration: 0.5,
@@ -34,7 +34,7 @@ const animCollection = {
     },
     show: {
       opacity: 1,
-      x: '50vw',
+      x: '0',
       transition: {
         duration: 1,
       },
@@ -58,7 +58,7 @@ const animCollection = {
   },
 };
 
-const ScrollCards = ({ animName, children }) => {
+const ScrollCards = ({ animName, children, span }) => {
   const [ref, inView] = useInView({ threshold: 0.50 });
   const controls = useAnimation();
 
@@ -77,6 +77,7 @@ const ScrollCards = ({ animName, children }) => {
         ref={ref}
         variants={animCollection[animName]}
         animate={controls}
+        style={span}
       >
 
         {children}

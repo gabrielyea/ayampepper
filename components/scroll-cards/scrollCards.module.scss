@@ -1,17 +1,22 @@
 .mainContainer {
   border-radius: 20px; 
-  height: 150px; 
+  height: 100%; 
   width: 800px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   transform-origin: center;
-  padding: 4em 0em;
+  padding: 4em 2em;
   gap: 2em;
+  background-color: rgba(63, 63, 63, 0.438);
 
   div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
       p {
-        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
         color: #a0c040;
       }
   }
@@ -22,22 +27,20 @@
 }
 
 @media (max-width: 600px) {
+
   .mainContainer {
-    height: 200px; 
-    width: 100px;
-    width: 100vw;
+    width: 100%;
     padding: 1em 1em;
 
     div {
-      width: 400px;
         p {
           font-size: 0.8rem;
           color: #a0c040;
         }
     }
     img {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
     }
   }
 }
